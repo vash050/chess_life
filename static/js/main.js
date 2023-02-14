@@ -2,10 +2,11 @@
 
 
 window.addEventListener('load', function () {
+    let d = 0;
     const gameBoard = new Board();
     gameBoard.renderGameBoard();
     game.getCellWithSymbol();
-    // resetGame();
+    resetGame(gameBoard);
 
 });
 

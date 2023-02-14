@@ -19,7 +19,7 @@ class Board {
             for (let j = 0; j < 9; j++) {
                 cell += `<td data-x="${i}" data-y="${j}">`;
                 if ((i === 0) || (j === 0)) {
-                    if (number > 8){
+                    if (number > 8) {
                         number = 1;
                     }
                     cell += `${number} `;
@@ -39,6 +39,17 @@ class Board {
      */
     addBoard(cell) {
         this.table.insertAdjacentHTML("afterBegin", cell);
+    }
+
+    /**
+     * функция очищяет доску
+     */
+    function
+
+    clearGameBoard() {
+
+        this.renderGameBoard()
+        return;
     }
 
 
