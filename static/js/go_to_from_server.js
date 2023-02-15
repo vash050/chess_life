@@ -5,5 +5,5 @@ function sendToServer() {
     button_send.addEventListener('click', function () {
         console.log(data.arrayMan);
     })
-    return;
+
 }

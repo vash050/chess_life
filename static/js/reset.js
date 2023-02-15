@@ -14,7 +14,7 @@ function resetGame() {
         // win.checkStatus();
     }
      });
-     return;
+
 }
 
 
@@ -24,10 +24,10 @@ function resetGame() {
 function clearGameBoard() {
     let tdAll = document.querySelectorAll('td');
     tdAll.forEach(function(td) {
-        console.log(td.innerText)
         if (td.innerText === '') {
             td.innerHTML = '';
         }
+        data.arrayMan = [];
     });
-    return;
+
 }

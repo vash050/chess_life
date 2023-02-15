@@ -49,7 +49,7 @@ class Board {
     clearGameBoard() {
 
         this.renderGameBoard();
-        return;
+
     }
 
 }

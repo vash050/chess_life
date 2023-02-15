@@ -12,7 +12,6 @@ let game = {
         let cellAll = document.querySelectorAll('td');
         for (let i = 0; i < cellAll.length; i++) {
             cellAll[i].addEventListener('click', function (event) {
-                console.log(event.target.dataset.x, event.target.dataset.y)
                 data.arrayMan.push([event.target.dataset.x, event.target.dataset.y])
                 if (getVerifyStatus()) {
                     game.renderSymbol(event);
@@ -20,7 +19,7 @@ let game = {
                 }
             });
         }
-        return;
+
     },
 
         /**
