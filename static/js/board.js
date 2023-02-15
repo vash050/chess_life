@@ -48,9 +48,8 @@ class Board {
 
     clearGameBoard() {
 
-        this.renderGameBoard()
+        this.renderGameBoard();
         return;
     }
-
 
 }

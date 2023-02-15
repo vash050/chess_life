@@ -1,5 +1,5 @@
 'use strict'
 
 function getVerifyStatus() {
-    return data.status == "game";
-};
+    return data.status === "game";
+}

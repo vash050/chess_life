@@ -7,6 +7,7 @@ window.addEventListener('load', function () {
     gameBoard.renderGameBoard();
     game.getCellWithSymbol();
     resetGame(gameBoard);
+    sendToServer();
 
 });
 
@@ -14,6 +15,7 @@ let data = {
 
     status: "game",
     symbol: '',
+    arrayMan: [],
 
     arrayValue: [
         ['', '', '', '', '', '', '', '', ''],

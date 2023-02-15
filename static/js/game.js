@@ -13,6 +13,7 @@ let game = {
         for (let i = 0; i < cellAll.length; i++) {
             cellAll[i].addEventListener('click', function (event) {
                 console.log(event.target.dataset.x, event.target.dataset.y)
+                data.arrayMan.push([event.target.dataset.x, event.target.dataset.y])
                 if (getVerifyStatus()) {
                     game.renderSymbol(event);
                     // win.checkWhoWon();
@@ -39,14 +40,7 @@ let game = {
             this.rederInCell(event);
         }
     },
-    //    /**
-    //  * функция добавляет символ в массив
-    //  * @param {} dataX
-    //  * @param {*} dataY
-    //  */
-    // addInArray(dataX, dataY) {
-    //     data.arrayValue[dataX][dataY] = `<img src="static/img/man_1.png" alt="">`
-    // },
+
     /**
      * функция проверяет пустая ли клетка поля
      * @param {} dataX
